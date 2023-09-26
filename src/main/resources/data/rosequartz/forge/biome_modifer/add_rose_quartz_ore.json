@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#mineacraft:is_overworld",
-  "features": "rosequartz:rose_quartz_ore_feature",
+  "features": "rosequartz:rose_quartz_ore_placed",
   "step": "underground_ores"
 }

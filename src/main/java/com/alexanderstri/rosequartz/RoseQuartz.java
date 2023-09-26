@@ -2,8 +2,8 @@ package com.alexanderstri.rosequartz;
 
 import com.alexanderstri.rosequartz.block.ModBlocks;
 import com.alexanderstri.rosequartz.item.ModItems;
-import com.alexanderstri.rosequartz.world.features.OreFeatures;
-import com.alexanderstri.rosequartz.world.placement.OrePlacements;
+import com.alexanderstri.rosequartz.world.features.ModConfiguredFeatures;
+import com.alexanderstri.rosequartz.world.features.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,8 +30,8 @@ public class RoseQuartz
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        OrePlacements.register(modEventBus);
-        OreFeatures.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

@@ -2,8 +2,8 @@ package com.alexanderstri.rosequartz;
 
 import com.alexanderstri.rosequartz.block.ModBlocks;
 import com.alexanderstri.rosequartz.item.ModItems;
-import com.alexanderstri.rosequartz.world.features.ModConfiguredFeatures;
-import com.alexanderstri.rosequartz.world.features.ModPlacedFeatures;
+import com.alexanderstri.rosequartz.world.feature.ModConfiguredFeatures;
+import com.alexanderstri.rosequartz.world.feature.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;

@@ -1,4 +1,4 @@
-package com.alexanderstri.rosequartz.world.features;
+package com.alexanderstri.rosequartz.world.feature;
 
 import com.alexanderstri.rosequartz.RoseQuartz;
 import net.minecraft.core.Registry;
@@ -16,7 +16,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> ROSE_QUARTZ_ORE_PLACED = PLACED_FEATURES.register("rose_quartz_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.ROSE_QUARTZ_ORE.getHolder().get(),
-                    commonOrePlacement(30, //VeinsPerChunk
+                    commonOrePlacement(20, //VeinsPerChunk
                             HeightRangePlacement.uniform(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(130)))));
 
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {

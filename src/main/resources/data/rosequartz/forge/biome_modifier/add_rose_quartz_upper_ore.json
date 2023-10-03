@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_mountain",
+  "features": "rosequartz:rose_quartz_ore_upper_placed",
+  "step": "underground_ores"
+}

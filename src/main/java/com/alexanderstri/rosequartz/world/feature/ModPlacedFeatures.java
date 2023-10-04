@@ -16,12 +16,14 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> ROSE_QUARTZ_ORE_LOWER_PLACED = PLACED_FEATURES.register("rose_quartz_ore_lower_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.ROSE_QUARTZ_ORE_LOWER.getHolder().get(),
-                    commonOrePlacement(20, //VeinsPerChunk
-                            HeightRangePlacement.triangle(VerticalAnchor.absolute(-48), VerticalAnchor.absolute(32)))));
+                    commonOrePlacement(12, //VeinsPerChunk
+                            HeightRangePlacement.triangle(VerticalAnchor.absolute(-48),/*Absolute equals Y*/ VerticalAnchor.absolute(32)/*Max rate at -8*/))));
     public static final RegistryObject<PlacedFeature> ROSE_QUARTZ_ORE_UPPER_PLACED = PLACED_FEATURES.register("rose_quartz_ore_upper_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.ROSE_QUARTZ_ORE_UPPER.getHolder().get(),
-                    commonOrePlacement(20, //VeinsPerChunk
-                            HeightRangePlacement.triangle(VerticalAnchor.absolute(130), VerticalAnchor.absolute(222)))));
+                    commonOrePlacement(12, //VeinsPerChunk
+                            HeightRangePlacement.triangle(VerticalAnchor.absolute(130), VerticalAnchor.absolute(222)/*Max rate at 176*/))));
+
+
 
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
